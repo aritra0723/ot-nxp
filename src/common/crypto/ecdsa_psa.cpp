@@ -42,14 +42,14 @@
 #include "common/code_utils.hpp"
 #include "common/debug.hpp"
 
+#if OPENTHREAD_CONFIG_CRYPTO_LIB == OPENTHREAD_CONFIG_CRYPTO_LIB_PSA
+
 #include "psa/crypto.h"
 #include <mbedtls/asn1.h>
 #include "mcux_psa_s2xx_key_locations.h"
 
 using namespace ot;
 using namespace Crypto;
-
-#if OPENTHREAD_CONFIG_CRYPTO_LIB == OPENTHREAD_CONFIG_CRYPTO_LIB_PSA
 
 extern "C" void otPlatPsaInit()
 {
