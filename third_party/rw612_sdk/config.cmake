@@ -62,7 +62,7 @@ target_compile_definitions(${NXP_DRIVER_LIB} PUBLIC
     -DIMU_TASK_PRIORITY=2 # OSA priority: configMAX_PRIORITIES - (osa_prio) - 2 = FreeRTOS priority
     -DgPlatformDisableBleLowPower_d=0 # Enable BLE/15.4 low power feature
     -DNOT_DEFINE_DEFAULT_WIFI_MODULE
-    -DWIFI_BOARD_RW610
+    -DWIFI_BOARD_FRDM_RW61X
 )
 
 #// Temporarily adding -Wno-error to suppress PSA driver warnings that are promoted to errors
